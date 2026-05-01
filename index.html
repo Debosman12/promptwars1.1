@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Elections Assistant</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Landscape Enforcer -->
+    <div id="landscape-enforcer">
+      <div class="enforcer-content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotate-icon"><rect width="12" height="20" x="6" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+        <h2>Please Rotate Your Device</h2>
+        <p>This app is designed for an immersive landscape experience.</p>
+      </div>
+    </div>
+
+    <!-- Main App Container -->
+    <div id="app">
+      <header class="app-header">
+        <div class="logo">
+          <h1>Indian Elections Assistant</h1>
+          <p class="subtitle">Demystifying the World's Largest Democracy</p>
+        </div>
+        <nav class="main-nav">
+          <button class="nav-btn active" data-target="timeline">Timeline</button>
+          <button class="nav-btn" data-target="flashcards">Flashcards</button>
+          <button class="nav-btn" data-target="quiz">Quiz</button>
+        </nav>
+      </header>
+
+      <main class="content-area">
+        <!-- Views will be injected here -->
+        <section id="timeline-view" class="view active">
+          <div id="timeline-container"></div>
+        </section>
+        
+        <section id="flashcards-view" class="view">
+          <div id="flashcards-container"></div>
+        </section>
+
+        <section id="quiz-view" class="view">
+          <div id="quiz-container"></div>
+        </section>
+      </main>
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
